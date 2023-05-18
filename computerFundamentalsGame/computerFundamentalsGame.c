@@ -15,6 +15,7 @@ int main()
 
     printf("Ooh, it is so nice to meet you %s!\n", name);
     printf("To awnser the displayed question, just type the number of the anwser you selected\n");
+    printf("\n");
 
     printf("First question: What is the time complexity of a linear search algorithm?\n");
     printf("1 - O(1)\n");
@@ -32,6 +33,42 @@ int main()
         points = 10;
     }
 
+    printf("\n");
+    printf("Second question: Which data structure follows the Last-In-First-Out (LIFO) principle?\n");
+    printf("1 - Queue\n");
+    printf("2 - Stack\n");
+    printf("3 - Linked list\n");
+    scanf("%d", &anwser);
+
+    if (anwser < 1 || anwser > 3) {
+        printf("Invalid value! Enter a new anwser: ");
+        scanf("%d", &anwser);
+    } else if (anwser == 1 || anwser == 3) {
+        printf("Wrong anwser :/ Try again next time :D\n");
+    } else if (anwser == 2) {
+        printf("RIGHT ANWSER :D 10 points :D\n");
+        points += 10;
+    }
+
+    printf("\n");
+    printf("Third question: What is the purpose of an index in a database?\n");
+    printf("1 - To ensure data integrity\n");
+    printf("2 - To provide a unique identifier for each record\n");
+    printf("3 - To optimize the search and retrieval of data\n");
+    scanf("%d", &anwser);
+
+    if (anwser < 1 || anwser > 3) {
+        printf("Invalid value! Enter a new anwser: ");
+        scanf("%d", &anwser);
+    } else if (anwser == 1 || anwser == 2) {
+        printf("Wrong anwser :/ Try again next time :D\n");
+    } else if (anwser == 3) {
+        printf("RIGHT ANWSER :D 10 points :D\n");
+        points += 10;
+    }
+
+
+    printf("\n");
     printf("Game over! Thanks for playing :D \n");
     printf("Your score was %d, %s, congratulations!", points, name);
     return 0;
