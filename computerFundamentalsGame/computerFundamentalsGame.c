@@ -23,10 +23,10 @@ int main()
     printf("3 - O(n)\n");
     scanf("%d", &anwser);
 
-    if (anwser < 1 || anwser > 3) {
+    while (anwser < 1 || anwser > 3) {
         printf("Invalid value! Enter a new anwser: ");
         scanf("%d", &anwser);
-    } else if (anwser == 1 || anwser == 2) {
+    } if (anwser == 1 || anwser == 2) {
         printf("Wrong anwser :/ Try again next time :D\n");
     } else if (anwser == 3) {
         printf("RIGHT ANWSER :D 10 points :D\n");
@@ -40,10 +40,10 @@ int main()
     printf("3 - Linked list\n");
     scanf("%d", &anwser);
 
-    if (anwser < 1 || anwser > 3) {
+    while (anwser < 1 || anwser > 3) {
         printf("Invalid value! Enter a new anwser: ");
         scanf("%d", &anwser);
-    } else if (anwser == 1 || anwser == 3) {
+    } if (anwser == 1 || anwser == 3) {
         printf("Wrong anwser :/ Try again next time :D\n");
     } else if (anwser == 2) {
         printf("RIGHT ANWSER :D 10 points :D\n");
@@ -57,10 +57,12 @@ int main()
     printf("3 - To optimize the search and retrieval of data\n");
     scanf("%d", &anwser);
 
-    if (anwser < 1 || anwser > 3) {
+    while (anwser < 1 || anwser > 3) {
         printf("Invalid value! Enter a new anwser: ");
         scanf("%d", &anwser);
-    } else if (anwser == 1 || anwser == 2) {
+    }
+    
+    if (anwser == 1 || anwser == 2) {
         printf("Wrong anwser :/ Try again next time :D\n");
     } else if (anwser == 3) {
         printf("RIGHT ANWSER :D 10 points :D\n");
